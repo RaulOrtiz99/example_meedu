@@ -10,4 +10,9 @@ class CounterController extends SimpleNotifier {
     counter++;
     notify(); //esto es para actualizar la vista
   }
+
+  void decrement() {
+    counter--;
+    notify();
+  }
 }
