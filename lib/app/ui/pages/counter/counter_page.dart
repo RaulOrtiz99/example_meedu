@@ -14,7 +14,7 @@ class CounterPage extends StatelessWidget {
               final c = ref.watch(counterProvider);
               return Text(
                 "${c.counter}",
-                style: TextStyle(fontSize: 35),
+                style: const TextStyle(fontSize: 35),
               );
             },
           ),
@@ -25,7 +25,7 @@ class CounterPage extends StatelessWidget {
           children: [
             FloatingActionButton(
               backgroundColor: Colors.amber,
-              child: Text(
+              child: const Text(
                 "+",
                 style: TextStyle(fontSize: 20),
               ),
@@ -35,7 +35,7 @@ class CounterPage extends StatelessWidget {
             ),
             FloatingActionButton(
               backgroundColor: Colors.pink,
-              child: Text(
+              child: const Text(
                 "-",
                 style: TextStyle(fontSize: 20),
               ),
